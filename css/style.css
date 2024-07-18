@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+
+body{
+    background-color: #f3f3f3;
+    overflow:hidden
+}
+ul{
+  list-style: none;
+}
+/* SPINNER */
+#loading{
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:100vh;
+    z-index:999
+}
+.loader {
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    background: currentColor;
+    color: black;
+    box-sizing: border-box;
+    animation: animloader 0.3s 0.3s linear infinite alternate;
+  }
+  
+  .loader::after, .loader::before {
+    content: '';
+    width: 8px;
+    height: 40px;
+    border-radius: 4px;
+    background: currentColor;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    box-sizing: border-box;
+    animation: animloader 0.3s  0.45s  linear infinite alternate;
+  }
+  .loader::before {
+    left: -20px;
+    animation-delay: 0s;
+  }
+  
+  @keyframes animloader {
+    0%   { height: 48px} 
+    100% { height: 4px}
+  }
+
+
+
+
+/* CUNSTOMER SECTION */
+
+.customer .title {
+   /* background-color:#7474ff; */
+  background-color:#ff7474 ;
+
+   color:#fff
+}
+.customer .title a{
+    color:#fff;
+    text-decoration:none
+}
+.customer .customer-list .form input{
+    font-size:14px;
+    padding-left:10px;
+    padding-block:4px;
+    outline:0
+}
+.customer .customer-list ul li{
+    border:1px solid #e5e5e5;
+    cursor: pointer;
+}
+/* TABLE */
+div#caption {
+    padding-bottom: 10px;
+    font-weight: bold;
+    color:black
+  }
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+tr {
+    border: 1px solid #bdbbbb;
+}
+table td + td , table th + th{ 
+    border-left:1px solid #bdbbbb;
+ }
+
+
+ /* CUSTOMER DETAILS */
+
+ .customer .customer-details ul li{
+    border:none;
+    margin-right: 20px;
+ }
+
+
+ 
+
+ 
